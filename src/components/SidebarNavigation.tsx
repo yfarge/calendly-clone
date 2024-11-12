@@ -1,4 +1,4 @@
-import { Calendar } from 'lucide-react';
+import { Calendar, History } from 'lucide-react';
 
 import {
     Sidebar,
@@ -18,6 +18,11 @@ const items = [
         title: 'Events',
         url: '/events',
         icon: Calendar,
+    },
+    {
+        title: 'Schedule',
+        url: '/schedule',
+        icon: History,
     },
 ];
 
