@@ -1,12 +1,12 @@
-import { Button } from "@/components/ui/button";
-import { SignInButton, SignUpButton } from "@clerk/nextjs";
-import { auth } from "@clerk/nextjs/server";
-import { CalendarFold } from "lucide-react";
-import { redirect } from "next/navigation";
+import { Button } from '@/components/ui/button';
+import { SignInButton, SignUpButton } from '@clerk/nextjs';
+import { auth } from '@clerk/nextjs/server';
+import { CalendarFold } from 'lucide-react';
+import { redirect } from 'next/navigation';
 
 export default async function Home() {
   const { userId } = await auth();
-  if (userId != null) redirect("/events");
+  if (userId != null) redirect('/events');
 
   return (
     <div className="min-h-screen grid place-items-center p-4">
