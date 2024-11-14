@@ -5,7 +5,7 @@ export default function NewEventPage() {
     return (
         <Card>
             <CardHeader>
-                <CardTitle> New Event</CardTitle>
+                <CardTitle>New Event</CardTitle>
             </CardHeader>
             <CardContent>
                 <EventForm />

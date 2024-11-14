@@ -1,5 +1,4 @@
-import { Calendar, History } from 'lucide-react';
-
+import { Calendar, CalendarFold, History } from 'lucide-react';
 import {
     Sidebar,
     SidebarContent,
@@ -7,9 +6,11 @@ import {
     SidebarGroup,
     SidebarGroupContent,
     SidebarGroupLabel,
+    SidebarHeader,
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
+    SidebarSeparator,
 } from '@/components/ui/sidebar';
 import { UserButton } from '@clerk/nextjs';
 
@@ -29,6 +30,13 @@ const items = [
 export function SidebarNavigation() {
     return (
         <Sidebar>
+            <SidebarHeader>
+                <div className="flex gap-2 p-1 font-bold">
+                    <CalendarFold />
+                    Calendly Clone
+                </div>
+            </SidebarHeader>
+            <SidebarSeparator />
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel>Application</SidebarGroupLabel>
